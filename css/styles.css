@@ -1,0 +1,737 @@
+/* common */
+
+body {
+  margin: 0;
+}
+
+h1,h2,p {
+  margin: 0;
+}
+
+.container {
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  max-width: 800px;
+  
+}
+
+ul li {
+  list-style: none;
+}
+
+
+a {
+  display: block;
+  text-decoration: none;
+  color:white;
+  cursor: pointer;
+}
+
+
+
+
+/* header */
+
+header {
+  padding: 16px 0;
+  height: 80px;
+  background: #0c3b2c; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1{
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+ header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+
+header img {
+  width: 140px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+header .btn {
+ margin-top: 20px;
+  padding: 10px 30px;
+  background: #bb8a52;
+  border-radius: 40px;
+  display: block;
+  /* margin-right: 20px; */
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  }
+
+  #humberger {
+    position: relative;
+    height: 20px;
+    width: 28px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  #humberger div {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 28px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  #humberger div:nth-of-type(1) {
+    top: 10px;
+  }
+  #humberger div:nth-of-type(2) {
+    bottom: 1px;
+  }
+  /* #humberger div:nth-of-type(3) {
+    bottom: 0;
+  } */
+
+
+/* hero */
+
+.hero {
+  display: block;
+  padding-top: 90px;
+  padding-bottom: 430px;
+  background-image: url("../img/salad.png");
+  background-size: cover;
+  /* background: cadetblue; */
+}
+
+.hero h1{
+  color: white;
+  font-size: 15px;
+  text-shadow: 1px 1px 7px rgb(59, 59, 59);
+  margin: 15px 0;
+}
+
+.hero h2{
+  color: white;
+  font-size: 50px;
+  text-shadow: 1px 1px 7px rgb(59, 59, 59);
+}
+
+.hero p{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 7px rgb(59, 59, 59);
+  margin: 15px 0;
+}
+
+/* Form */
+
+section.form{
+  background-color: rgb(248, 241, 233);
+}
+
+.pop {
+  width: 300px;
+  height: 140px;
+  background:rgb(255, 254, 251);
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 20px;
+  transform: translateY(-70px);
+  box-shadow: 5px 2px 2px rgba(216, 216, 216, 0.212);
+}
+
+.pop p {
+  font-size: 12px;
+  color: rgb(15, 70, 15);
+  font-weight: bold;
+
+}
+
+/* presentation */
+
+.presentation {
+  background-color: rgb(239 236 232);
+  overflow: hidden;
+}
+
+.presentation .container h1{
+  font-size: 40px;
+  margin: 0 40px;
+}
+
+.presentation .container h2{
+  font-size: 18px;
+  margin: 20px 35px;
+  line-height: 35px;
+}
+
+.presentation .container h3{
+  font-size: 13px;
+  margin: 20px 40px;
+  line-height: 25px;
+}
+
+.presentation .container p{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 20px 30px;
+  line-height: 25px;
+}
+
+.presentation .container .saladpic1 img{
+  object-fit:  cover;
+  width: 100%;
+  height: 100%;
+  transform: translateX(50px);
+  /* overflow: hidden; */
+  border-radius: 200px 0 0 200px;
+  margin: 20px 0;
+}
+
+.presentation .container .saladpic2 img{
+  object-fit:  cover;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-60px);
+  /* overflow: hidden; */
+  border-radius: 0 200px 200px 0;
+  margin: 20px 0;
+}
+
+.presentation .container span.number01{
+  font-size: 40px;
+  margin-right: 7px;
+  margin-left: 40px;
+  font-weight: bold;
+  color: rgb(21, 77, 33);
+}
+
+.presentation .container span.number02{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: rgb(21, 77, 33);
+}
+
+.presentation .container span.number03{
+  font-size: 40px;
+  margin-right: 7px;
+  /* margin-left: 40px; */
+  font-weight: bold;
+  color: rgb(21, 77, 33);
+}
+
+button.btn{
+  border: none;
+  font-size: 13px;
+  background-color: rgb(5, 48, 5);
+  color: white;
+  border-radius: 40px;
+  padding: 30px 120px;
+  display: block;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+/* 食べる方法３つ */
+
+.container .way-intro{
+  text-align: center;
+  }
+
+.container .way-detail{
+background-color: rgba(255, 255, 255, 0.226);
+border-radius: 280px 280px 0 0;
+padding-top: 100px;
+padding-bottom: 30px;
+margin: 30px 0px;
+}
+
+.presentation .container .way-intro h2{
+font-size:17px;
+margin:10px;
+}
+
+.presentation .container .way-intro h3{
+font-size:23px;
+margin: 0;
+}
+
+.container .way-detail img {
+  width: 250px;
+  display: block;
+  margin: auto;
+}
+
+.container .way-detail h2 {
+text-align: center;
+margin: 15px;
+font-size: 17px;
+line-height: 30px;
+}
+
+.container .way-detail p {
+font-size: 13px;
+}
+
+/* スケジュール */
+
+.slide-schedule {
+  background-color: rgba(228, 225, 220, 1);
+  /* background:linear-gradient(45deg, blue, red); */
+  /* border-radius: 350px 350px 0 0; */
+  height: 1230px;
+  overflow: hidden;
+  
+}
+
+.container .choice-info{
+  
+  z-index: 20;
+}
+
+.container .choice-info h2 {
+  /* margin-top: 60px; */
+  font-size: 40px;
+  color: rgb(21, 73, 21);
+  text-align: center;
+  }
+
+.container .choice-info h3 {
+  margin: 15px;
+  font-size: 28px;
+  text-align: center;
+  }
+
+.container .choice-info h4 {
+  margin: 15px;
+  font-size: 18px;
+  text-align: center;
+  }
+
+.container .choice-info p {
+  margin: 20px;
+  font-size: 15px;
+  }
+  
+/* swiper zone */
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  margin-top: 30px;
+  /* margin-bottom: 40px; */
+}
+
+.swiper-slide{
+  max-width: 300px;
+  background-color: #0c3b2c;
+  color:white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+
+
+
+.sd-sc h2{
+  text-align: left;
+  margin: 20px;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.slide-schedule span{
+  font-size: 25px;
+}
+
+.box {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.box .boxes{
+  background-color: #f3f1ee;
+  width: 145px;
+  height: 140px;
+  padding: 15px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.boxes span{
+  font-size: 10px;
+ 
+}
+
+.boxes ul{
+  display: flex;
+  margin:0;
+  padding-left: 0px;
+  align-items: center;
+  color: rgb(20, 56, 20);
+}
+
+.boxes ul li:nth-child(1) {
+	font-size: 35px;
+  font-style: bold;
+
+}
+.boxes ul li:nth-child(2) {
+ font-size:10px;
+ margin-left: 15px;
+}
+
+.inbox .btn {
+  font-size: 18px;
+  margin-top: 13px;
+  padding: 18px;
+  border-radius: 40px;
+  font-style: bold;
+
+}
+
+
+.boxes .btn {
+ 
+  font-size: 12px;
+  text-align: center;
+  padding: 20px ;
+  border-radius: 30px;;
+  background-color: #bb8a52 ;
+
+}
+
+
+/* 重ね技 */
+
+.bg-green {
+  background-color: #0c3b2c;
+  
+  transform: translateY(-20px);
+  z-index: 1;
+}
+
+.half-maru{
+  background-color: rgba(228, 225, 220, 1);
+  border-radius: 0 0 800px 800px;
+  padding-top: 180px;
+
+  
+
+}
+
+
+.bg-gray {
+  background-color: rgb(239 236 232);
+  padding-top: 40px;
+  
+}
+
+.half-maru-up{
+  background-color: rgba(228, 225, 220, 1);
+  border-radius: 800px 800px 0 0;
+  padding-top: 180px;
+
+  
+
+}
+
+/* お客様の声 */
+
+.customer-voice {
+  background-color: #0c3b2c;
+  padding-top: 30px;
+  line-height: 60px;
+  padding-bottom: 190px;
+  transform: translateY(-20px);
+}
+
+.customer-voice h2{
+color: white;
+font-size:17px;
+/* width: 580px; */
+text-align: left;
+margin: 20px;
+line-height: 30px;
+}
+
+
+.customer-voice span{
+  color: white;
+  font-size:17px;
+  }
+
+.faq {
+  text-align: center;
+}
+
+.faq-logo{
+  background-color: cadetblue;
+  border-radius: 50%;
+  padding: 30px 23px;
+}
+
+.faq-intro{
+  font-size: 15px;
+  font-weight: bold;
+  transform: translateY(20px);
+}
+
+/* 質問 */
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa {
+	border-top: 1px solid #1b2538;
+  margin: 80px 20px;
+}
+.cp_qa .cp_actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 1px;
+	color: #1b2538;
+}
+.cp_qa .cp_actab input {
+	position: absolute;
+	opacity: 0;
+}
+/* 質問 */
+.cp_qa .cp_actab label {
+	font-weight: bold;
+	line-height: 1.6;
+	position: relative;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 1em 2em 1em 1em;
+	cursor: pointer;
+	border-bottom: 1px solid #1b2538;
+}
+.cp_qa .cp_actab label:hover {
+	color: #00838F;
+}
+/* 答え */
+.cp_qa .cp_actab .cp_actab-content {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: max-height 0.5s ease;
+	        transition: max-height 0.5s ease;
+	color: #ffffff;
+	background: rgba(0, 131, 143, 0.5);
+}
+.cp_qa .cp_actab .cp_actab-content p {
+	margin: 1em;
+}
+/* 質問を開いた時の仕様 */
+/* --アイコン */
+.cp_qa .cp_actab input:checked ~ label {
+	color: #00838F;
+}
+/* --答えの高さ */
+.cp_qa .cp_actab input:checked ~ .cp_actab-content {
+	max-height: 40em;
+}
+/* 質問をクリックした時のアイコンの動き */
+.cp_qa .cp_actab label::after {
+	line-height: 1.6;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	display: block;
+	width: 3em;
+	margin-top: -12.5px;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	text-align: center;
+}
+.cp_qa .cp_actab input[type=checkbox] + label::after {
+	content: 'BC';
+}
+.cp_qa .cp_actab input[type=checkbox]:checked + label::after {
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+.btn-g{
+  background-color: #0c3b2c;
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  border-radius: 80px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+/* CTA */
+
+.cta {
+background-color: #e3dfda;
+padding:50px 0 ;
+text-align: center;
+}
+
+.cta h2{
+  font-size: 50px;
+  color: rgb(15, 61, 15);
+}
+
+.cta h3{
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.cta span{
+  font-size: 28px;
+}
+
+.cta p{
+  font-size: 14px;
+  margin: 10px 20px;
+  line-height: 20px;
+}
+
+
+
+.cta .cta-btn {
+  margin: 30px auto;
+  width: 80%;
+  padding: 20px;
+  border-radius: 80px;;
+  background-color: #bb8a52 ;
+
+}
+
+.z-container{
+  position: relative;
+  z-index:30;
+  height: 130px;
+}
+
+.swiperb {
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index:30;
+  top: -250px
+ 
+}
+
+.swiperb .swiper-slide{
+  max-width: 400px;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 12px 12px 2px 1px rgba(36, 36, 36, 0.2);;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #0c3b2c;
+  height: 330px;
+}
+
+footer img{
+  width: 150px;
+}
+
+footer .container section{
+  display: flex;
+  /* width: 90%; */
+}
+
+.foot01 {
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+
+.foot02 {
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.foot03 {
+  margin-top: 30px;
+  font-size: 18px;
+  color: white;
+}
+
+
+.foot04 {
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 18px;
+  color: white;
+}
+
+.foot05 {
+  margin-top: 30px;
+  font-size: 14px;
+  color: white;
+}
+
+.foot06 {
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 14px;
+  color: white;
+}
+
+.copywrite {
+  margin: 30px;
+  margin-left:5px;
+  color:white;
+  font-size: 14px;
+}
+
+footer .foot07 img{
+  width: 50px;
+  margin-top: 15px;
+  margin-left: 100px;
+}
+
